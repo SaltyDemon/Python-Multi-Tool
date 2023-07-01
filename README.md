@@ -10,9 +10,6 @@ DemonTool is a beginner program written in python. Updates regularly
   <a href="https://discord.gg/7kwB8XBN8x">Discord</a>
 </div>
 
-(https://gyazo.com/8a13df93e621785873715dcf64758459)
-
-
 ## 💻 Usage
 * pip install -r requirements
 * run DemonTool.py
@@ -23,4 +20,5 @@ DemonTool is a beginner program written in python. Updates regularly
 * Nitro generator.
 * Ip Pinger.
 * Discord Tools
+* WebScrapper
 * More Coming Soon
