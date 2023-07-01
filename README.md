@@ -12,5 +12,12 @@ DemonTool is a beginner program written in python. Updates regularly
 
 ## 💻 Usage
 * pip install -r requirements
-* 
+* run DemonTool.py
+* Join our discord to get User name and Password!
 * Input the right number to interact with the menu.
+
+## 🗒️ Features
+* Nitro generator.
+* Ip Pinger.
+* Discord Tools
+* More Coming Soon
