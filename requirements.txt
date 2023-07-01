@@ -1,0 +1,17 @@
+requests
+discord
+colorama
+subprocess
+socket
+string
+pillow
+scapy
+pystyle
+smtplib
+sys
+strftime
+requests_html
+asyncio
+aiohttp
+gtts
+discord.ext
