@@ -7,7 +7,7 @@ DemonTool is a beginner program written in python. Updates regularly
 </div>
 <div align="center">
   Star ⭐ if you want more <br>
-  <a href="https://discord.gg/GyYDqW6s">Discord</a> | <a href="https://github.com/astros3x/Astri#warning-disclaimer">Disclaimer</a>
+  <a href="https://discord.gg/7kwB8XBN8x">Discord</a> | <a href="https://github.com/astros3x/Astri#warning-disclaimer">Disclaimer</a>
 </div>
 
 ## 💻 Usage
