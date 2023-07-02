@@ -15,26 +15,29 @@ import subprocess
 
 
 Main_Logo = f'''
-{Fore.MAGENTA} _______                                            ________                    __ 
-{Fore.LIGHTMAGENTA_EX}|       \                                          |        \                  |  
-{Fore.MAGENTA}| $$$$$$$\  ______   ______ ____    ______   _______\$$$$$$$$______    ______  | $$
-{Fore.LIGHTMAGENTA_EX}| $$  | $$ /      \ |      \    \  /      \ |       \ | $$  /      \  /      \ | $$
-{Fore.LIGHTMAGENTA_EX}| $$  | $$|  $$$$$$\| $$$$$$\$$$$\|  $$$$$$\| $$$$$$$\| $$ |  $$$$$$\|  $$$$$$\| $$
-{Fore.MAGENTA}| $$  | $$| $$    $$| $$ | $$ | $$| $$  | $$| $$  | $$| $$ | $$  | $$| $$  | $$| $$
-{Fore.LIGHTMAGENTA_EX} $$__/ $$| $$$$$$$$| $$ | $$ | $$| $$__/ $$| $$  | $$| $$ | $$__/ $$| $$__/ $$| $$
-{Fore.MAGENTA}| $$    $$ \$$     \| $$ | $$ | $$ \$$    $$| $$  | $$| $$  \$$    $$ \$$    $$| $$
-{Fore.LIGHTMAGENTA_EX} \$$$$$$$   \$$$$$$$ \$$  \$$  \$$  \$$$$$$  \$$   \$$ \$$   \$$$$$$   \$$$$$$  \$$
+{Fore.MAGENTA}______                         _____           _ 
+{Fore.LIGHTMAGENTA_EX}|  _  \                       |_   _|         | |
+{Fore.MAGENTA} | | |___ _ __ ___   ___  _ __ | | ___   ___ | |
+{Fore.LIGHTMAGENTA_EX}| | | / _ \ '_ ` _ \ / _ \| '_ \| |/ _ \ / _ \| |
+{Fore.MAGENTA}| |/ /  __/ | | | | | (_) | | | | | (_) | (_) | |
+{Fore.MAGENTA}|___/ \___|_| |_| |_|\___/|_| |_\_/\___/ \___/|_|
+                                                 
 
 '''
 
 Main_Hub = f"""
-{Fore.CYAN}1 = PINGER       
-{Fore.CYAN}2 = WEB SCRAPPER
-{Fore.CYAN}3 = IP GEO    
-{Fore.CYAN}4 = DISCORD NUKER
-{Fore.CYAN}5 = GMAIL BRUTEFORCE
-{Fore.CYAN}6 = NITRO GEN
-{Fore.CYAN}7 = {Fore.RED}EXIT
+{Fore.WHITE}╔══════════════════════╗
+{Fore.WHITE}║ {Fore.MAGENTA}[1]{Fore.WHITE}= {Fore.LIGHTMAGENTA_EX}PINGER          {Fore.WHITE}║       
+{Fore.WHITE}║ {Fore.MAGENTA}[2]{Fore.WHITE}= {Fore.LIGHTMAGENTA_EX}WEB SCRAPPER    {Fore.WHITE}║       
+{Fore.WHITE}║ {Fore.MAGENTA}[3]{Fore.WHITE}= {Fore.LIGHTMAGENTA_EX}IP GEO          {Fore.WHITE}║       
+{Fore.WHITE}║ {Fore.MAGENTA}[4]{Fore.WHITE}= {Fore.LIGHTMAGENTA_EX}DISCORD NUKER   {Fore.WHITE}║        
+{Fore.WHITE}║ {Fore.MAGENTA}[5]{Fore.WHITE}= {Fore.LIGHTMAGENTA_EX}GMAIL BRUTEFORCE{Fore.WHITE}║       
+{Fore.WHITE}║ {Fore.MAGENTA}[6]{Fore.WHITE}= {Fore.LIGHTMAGENTA_EX}NITRO GEN       {Fore.WHITE}║       
+{Fore.WHITE}║ {Fore.MAGENTA}[7]{Fore.WHITE}= {Fore.RED}EXIT            {Fore.WHITE}║                                                                                    
+{Fore.WHITE}╚══════════════════════╝
+                                                                               
+
+
 
 
 """
@@ -44,8 +47,8 @@ def clear_screen():
     # Clear screen based on the operating system
     os.system('cls' if os.name == 'nt' else 'clear') 
 print(Main_Logo)
-userName = input(Fore.CYAN + " \n\nUsername: ")  #Ask's the User for Username input
-password = input(Fore.CYAN + "Password: ") # Ask's the user for their password
+userName = input(Fore.LIGHTMAGENTA_EX + " \n\nUsername: ")  #Ask's the User for Username input
+password = input(Fore.LIGHTMAGENTA_EX + "Password: ") # Ask's the user for their password
 
 
 count = 0 # Create a variable, to ensure the user has limited attempts at entering their correct username and password
@@ -78,13 +81,13 @@ def Main():
     print(Main_Logo)
     print(Main_Hub)
     while True:
-        choice = input(Fore.CYAN + 'Enter a Number: ')
+        choice = input(Fore.MAGENTA + 'Enter a Number: ')
         if choice == '1':
             clear_screen()
             subprocess.call(['python', 'C:/Users/Nick/Desktop/DemonTool/Tools//ippinger.py'])
         elif choice == '2':
             clear_screen()
-            s = input("Enter Website: ")
+            s = input(Fore.MAGENTA + "Enter Website: ")
             subprocess.call(['python', 'C:/Users/Nick/Desktop/DemonTool/Tools/webscrapper.py'])
             print(Colors.red + "YOU HAVE 60 SECONDS TO GATHER INFORMATION")
             time.sleep(1000)
@@ -104,7 +107,7 @@ def Main():
         elif choice == '6':
             subprocess.call(['python', 'C:/Users/Nick/Desktop/DemonTool/Tools/nitrogen.py'])
         elif choice == '7':
-            print('Exiting')
+            print(Fore.MAGENTA + 'Exiting')
             time.sleep(1)
             break
         else: 
