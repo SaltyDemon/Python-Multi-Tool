@@ -17,21 +17,18 @@ colorama.init(autoreset=True)
 
 def print_logo():
     logo = '''
-        _______                                               ______  _______  
-        |       \                                             |      \|       \ 
-        | $$$$$$$\  ______   ______ ____    ______   _______   \$$$$$$| $$$$$$$
-        | $$  | $$ /      \ |      \    \  /      \ |       \   | $$  | $$__/ $$
-        | $$  | $$|  $$$$$$\| $$$$$$\$$$$\|  $$$$$$\| $$$$$$$\  | $$  | $$    $$
-        | $$  | $$| $$    $$| $$ | $$ | $$| $$  | $$| $$  | $$  | $$  | $$$$$$$ 
-        | $$__/ $$| $$$$$$$$| $$ | $$ | $$| $$__/ $$| $$  | $$ _| $$_ | $$      
-        $$    $$ \$$     \| $$ | $$ | $$ \$$    $$| $$  | $$|   $$ \| $$      
-        \$$$$$$$   \$$$$$$$ \$$  \$$  \$$  \$$$$$$  \$$   \$$ \$$$$$$ \$$ 
+        ______                          ___________ 
+        |  _  \                        |_   _| ___ \
+        | | | |___ _ __ ___   ___  _ __  | | | |_/ /
+        | | | / _ \ '_ ` _ \ / _ \| '_ \ | | |  __/ 
+        | |/ /  __/ | | | | | (_) | | | || |_| |    
+        |___/ \___|_| |_| |_|\___/|_| |_\___/\_|
     '''
     print(Fore.MAGENTA + Fore.LIGHTMAGENTA_EX + logo + Style.RESET_ALL)
 
 
 def geolocation():
-    ip_address = input("Enter the IP address: ")
+    ip_address = input(Fore.MAGENTA + "Enter the IP address: ")
     url = f"https://ipapi.co/{ip_address}/json/"
     response = requests.get(url)
     if response.status_code == 200:
