@@ -56,4 +56,4 @@ async def on_guild_channel_create(channel):
     while True:
         await channel.send('@everyone, @here')
 
-client.run("MTEyMzY1NTc0OTEzMDc4ODkwNQ.GWVzEC.3UFISm6DyWcgIbMB8Y4UzvuJqacD2R3NRqubsQ")
+client.run("TOKEN_HERE")
